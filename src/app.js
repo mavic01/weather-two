@@ -27,7 +27,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 
 
 
-const weatherInfo = []
+
 
 app.get('/', (req, res) => {
     res.render('index', {
@@ -75,6 +75,11 @@ app.get('/weather', (req, res) => {
     })
 })
 
+// app.get('/weatherinfo', (req, res) => {
+//     res.render('weatherinfo', {
+//         title: gg
+//     })
+// })
 
 app.post('/', (req, res) => {
     const inputValue = req.body.me
