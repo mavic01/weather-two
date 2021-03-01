@@ -93,8 +93,8 @@ app.post('/', (req, res) => {
             }else{
              
                res.render('weatherinfo', {
-                   forecast: forecastData,
-                   location: location
+                   location: location,
+                   forecast: forecastData
 
                })
             }

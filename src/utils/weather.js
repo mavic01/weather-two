@@ -12,7 +12,7 @@ const weather = (lat, lon, callback) => {
             callback("Incorrect location name. check spelling please", undefined)
         }else{
             
-            callback(undefined, body.current.weather_descriptions[0] + ". It is currently " + body.current.temperature + " degrees out. It feels like " + body.current.feelslike + " degrees out")
+            callback(undefined, body.current.weather_descriptions[0] + ". It is currently " + body.current.temperature + " degrees out. It feels like " + body.current.feelslike + " degrees out. It has a cloud cover of " + body.current.cloudcover + " and wind speed and direction of " + body.current.wind_speed + " and " + body.current.wind_dir + " respectively. The humidity is " + body.current.humidity)
         }
     })
 }
